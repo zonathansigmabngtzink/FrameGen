@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#0F172A">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FrameGen"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E293B"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:elevation="6dp">
+
+        <TextView
+            android:id="@+id/shizukuStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shizuku: Checking..."
+            android:textColor="#CBD5F5"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/overlayStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overlay: Checking..."
+            android:textColor="#CBD5F5"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="32dp"/>
+
+    <!-- Switch -->
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/frameSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frame Generation OFF"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:trackTint="#334155"
+        app:thumbTint="#22C55E"/>
+
+</LinearLayout>
